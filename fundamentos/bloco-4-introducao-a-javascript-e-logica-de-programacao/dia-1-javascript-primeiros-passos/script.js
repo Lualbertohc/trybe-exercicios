@@ -36,12 +36,14 @@
 
 //4° PROGRAMA
 
-// const numero = 25;
+// const numero = 0;
 
 // if (numero > 0){
 //     console.log("positive")
-// } else {
+// } else if (numero < 0) {
 //     console.log("negative");
+// } else {
+//     console.log("zero");
 // }
 
 //5° PROGRAMA
@@ -54,46 +56,102 @@
 
 // 6° PROGRAMA
 
-// function xadrez(peca) {
-//     peca = peca.toLowerCase();
+// let pecaXadrez = "Rainha";
 
-//     if (peca === "peão") {
-//         return ("Move-se sempre uma casa para frente, exceto no primeiro movimento, quando pode mover-se duas casas");
-//     } else {
-//         return("peça inválida");
-//     }
+// switch (pecaXadrez.toLowerCase()) {
+
+//     case "peão": console.log("Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas casas.");
+//         break
+//     case "bispo": console.log("Bispo-> Diagonal.");
+//         break
+//     case "rainha": console.log("Rainha-> Diagonal, horizontal e vertical.");
+//         break
+//     case "cavalo": console.log("Cavalo -> pode pular sobre as peças.");
+//         break
+//     case "rei": console.log("Rei-> Uma casa apenas para qualquer direção.");
+//         break
+//     case "torre": console.log("Torre -> Horizontal e vertical.");
+//         break
+//         defalt: console.log("peça inválida");
+//         break
 // }
-// console.log(xadrez("Peão"));
+
 
 // 7° PROGRAMA
 
-// let faixaEtaria = 'adulto';
 
-// switch (faixaEtaria) {
-//   case 'adolescente':
-//     // Caso a variável seja "adolescente" então entraremos na lógica abaixo.
+// let nota = 750;
 
-//     console.log('Consulte a classificação do filme');
-//     // Quando a pessoa for adolescente essa será a mensagem impressa no console.
+// if (nota < 0 || nota > 100) {
+//     nota = "erro";
+// } else if (nota >= 90) {
+//     nota = "A";
+// } else if (nota >= 80) {
+//     nota = "B";
+// } else if (nota >= 70) {
+//     nota = "C";
+// } else if (nota >= 60) {
+//     nota = "D";
+// } else if (nota >= 50) {
+//     nota = "E";
+// } else {
+//     console.log("F");
+// }
+// console.log(nota);
 
-//     break;
-// default:
+// 8° PROGRAMA
 
-let nota = (40/100);
+// const num1 = 1;
+// const num2 = 3;
+// const num3 = 5;
 
-if (nota >= (90/100)) {
-    nota = "A";
-} else if (nota >= (80/100)) {
-    nota = "B";
-} else if (nota >= (70/100)) {
-    nota = "C";
-} else if (nota >= (60/100)) {
-    nota = "D";
-} else if (nota >= (50/100)) {
-    nota = "E";
-} else if (nota < (50/100)) {
-    nota = "F";
-} else if (nota < 0 || nota > (100/100)) {
-    console.log("erro");
-}
-console.log(nota);
+// if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+
+// 9° PROGRAMA
+
+// const num1 = 5;
+// const num2 = 54;
+// const num3 = 293;
+
+// if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+
+// 10° PROGRAMA
+
+// Escreva um programa que se inicie com dois valores em duas constantes diferentes: 
+// o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto 
+// de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+
+// Atente que, sobre o custo do produto, incide um imposto de 20%.
+
+// const valorCusto = 500;
+// const valorVenda = 700;
+// let impostoSobreOCusto = 500 * 0.20;
+// let valorCustoTotal = valorCusto + impostoSobreOCusto;
+// let lucro = valorVenda - valorCustoTotal;
+
+// const costOfProduct = 1;
+// const saleValue = 3;
+
+// if (costOfProduct >= 0 && saleValue >= 0) {
+//   const totalCostOfProduct = costOfProduct * 1.2;
+//   const totalProfit = (saleValue - totalCostOfProduct) * 1000;
+//   console.log(totalProfit);
+// } else {
+//   console.log("Error, os valores não podem ser negativos");
+// };
+
+
+
+
+
+
+
+
