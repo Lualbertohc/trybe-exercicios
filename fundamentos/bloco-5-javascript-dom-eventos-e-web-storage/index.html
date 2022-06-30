@@ -119,7 +119,7 @@
 
         // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
 
-        function createNewTagSection() {
+        function createNewNewTagSection() {
 
             let myMain = document.querySelector("main");
             let tagSection = document.createElement("section");
@@ -127,7 +127,20 @@
             myMain.appendChild(tagSection);
 
         }
-        createNewTagSection();
+        createNewNewTagSection();
+
+        // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. 
+        // Esse elemento deve ser filho do section criado no passo 5;
+
+        function addImg () {
+
+            let mySection = document.querySelector("main").firstChild.nextElementSibling;
+            let myImg = document.createElement("img");
+            myImg.className = "small-image";
+            myImg.src = "https://picsum.photos/200";
+            mySection.appendChild(myImg);
+        }
+        addImg()
 
     </script>
 </body>
