@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+        main,
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>
+    <main class="main-content">
+        <section class="center-content">
+            <p>Texto padrão do nosso site</p>
+            <p>-----</p>
+            <p>Trybe</p>
+        </section>
+    </main>
+    <script>
+
+        function changeText() {
+
+            document.getElementsByTagName("p");
+            let myText = document.getElementsByTagName("p");
+            myText[1].innerText = "Eu me vejo assim: assim como sou, só que mais eu. E eu sendo assim tão eu me faz ser cada vez mais eu mesmo.";
+            return myText;
+        }
+        changeText();
+
+        function changeColorYellow() {
+
+            document.getElementsByClassName("main-content");
+            let mainContent = document.getElementsByClassName("main-content");
+            mainContent[0].style.backgroundColor = "rgb(76,164,109)";
+            return mainContent;
+        }
+        changeColorYellow()
+
+        function changeColorRed() {
+
+            document.getElementsByClassName("center-content");
+            let fullWhite = document.getElementsByClassName("center-content");
+            fullWhite[0].style.backgroundColor = "white";
+            return fullWhite;
+        }
+        changeColorRed()
+
+        function brokerText() {
+
+            document.getElementsByTagName("h1");
+            let title = document.getElementsByTagName("h1");
+            title[0].innerText = "Exercício 5.1 - JavaEscript";
+            return title;
+        }
+        brokerText()
+
+        function changeTextTwo() {
+
+            document.getElementsByTagName("p");
+            let uppercase = document.getElementsByTagName("p");
+
+            for (index = 0; index < uppercase.length; index += 1) {
+                uppercase[index].style.textTransform = "uppercase";
+            }
+            return uppercase;
+        }
+        changeTextTwo()
+
+        function printTag() {
+
+            document.getElementsByTagName("p");
+            let theTag = document.getElementsByTagName("p");
+
+            for (index = 0; index < theTag.length; index += 1) {
+                console.log(theTag[index]);
+            }
+            return theTag;
+        }
+        printTag()
+
+    </script>
+</body>
+
+</html>
