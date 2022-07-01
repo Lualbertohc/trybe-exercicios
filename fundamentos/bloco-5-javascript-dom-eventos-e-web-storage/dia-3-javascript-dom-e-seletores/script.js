@@ -16,7 +16,6 @@ createDaysOfTheWeek();
 // Escreva seu código abaixo.
 
 //Adicionar array "decemberDaysList" na tag <ul>
-// A tag <ul> deve conter o id 'days';
 // Os dias devem estar contidos em uma tag <li>, e todos devem ter a classe day. Ex: <li class="day">3</li>
 // Os dias 24, 25 e 31 são feriados e, além da classe day, devem conter também a classe holiday. Ex: <li class="day holiday">24</li>
 
@@ -28,21 +27,14 @@ function addDaysList() {
     let day = decemberDaysList[index];
     let myLi = document.createElement("li");
     myLi.innerHTML = day;
+    myLi.classList.add("day");
     myUl.appendChild(myLi);
+
+    if (day === 24 || day === 25 || day === 31) {
+      myLi.classList.add("holiday");
+    } else if (day === 4 || day === 11 || day === 18 || day === 25) {
+      myLi.classList.add("friday");
+    }
   }
 }
 addDaysList();
-
-
-// function addUl() {
-//   let tagUl = document.querySelector("ul");
-//   tagUl.id = "days";
-// }
-// addUl()
-
-
-// function addClassDay () {
-// let liDay = document.querySelector("li");
-//
-// }
-// addClassDay ()
