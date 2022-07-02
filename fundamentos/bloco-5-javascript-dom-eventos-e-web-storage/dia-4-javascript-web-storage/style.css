@@ -1,0 +1,33 @@
+body {
+    width: calc(100% - 80px);
+    max-width: 1500px;
+    margin: 20px auto;
+}
+
+#header {
+    border: 1px solid rgb(230, 230, 230);
+    background-color: rgb(230, 230, 230);
+}
+
+#nav li {
+    display: inline;
+    margin-left: 50px;
+}
+
+#li {
+    margin-left: calc(100% - 400px);
+}
+
+#page-name {
+    float: left;
+    margin-left: 10px;
+}
+
+#main {
+    margin-top: 200px;
+    text-align: justify;
+}
+
+#main p {
+    font-size: 26px;
+}
