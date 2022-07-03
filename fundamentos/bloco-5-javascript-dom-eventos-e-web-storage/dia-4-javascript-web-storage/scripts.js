@@ -16,10 +16,9 @@ function darkLightTheme() {
 function menuFonts() {
 
     let menu = document.getElementById("buttons");
-    let newMenu = document.createElement("div");
-    newMenu.innerHTML = "<button> Arial </button> <button> Times New Roman </button> <button> monospace </button>";
-    menu.appendChild(newMenu);
-
+    let newDiv = document.createElement("div");
+    newDiv.innerHTML = "<button> Arial </button> <button> Times New Roman </button> <button> monospace </button>";
+    menu.appendChild(newDiv);
 }
 
 function changeCollorFont() {
