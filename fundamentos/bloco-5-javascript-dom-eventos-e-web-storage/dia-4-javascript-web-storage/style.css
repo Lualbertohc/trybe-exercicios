@@ -5,22 +5,7 @@ body {
 }
 
 #header {
-    border: 1px solid rgb(230, 230, 230);
-    background-color: rgb(230, 230, 230);
-}
-
-#nav li {
-    display: inline;
-    margin-left: 50px;
-}
-
-#li {
-    margin-left: calc(100% - 400px);
-}
-
-#page-name {
-    float: left;
-    margin-left: 10px;
+    background-color: black
 }
 
 #main {
