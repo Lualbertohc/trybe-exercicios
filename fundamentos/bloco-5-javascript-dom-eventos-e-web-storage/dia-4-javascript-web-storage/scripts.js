@@ -1,5 +1,5 @@
 
-function darkLightTheme() {
+function changeTheme() {
 
     if (document.body.style.background === "white") {
         document.getElementById("header").style.backgroundColor = "white";
@@ -13,12 +13,10 @@ function darkLightTheme() {
 
 }
 
-function menuFonts() {
+function changeFonts() {
 
-    let menu = document.getElementById("buttons");
-    let newDiv = document.createElement("div");
-    newDiv.innerHTML = "<button> Arial </button> <button> Times New Roman </button> <button> monospace </button>";
-    menu.appendChild(newDiv);
+    if (document.querySelector("p").style.fontFamily = "'Courier New', Courier, monospace")
+    document.body.style.background === "red";
 }
 
 function changeCollorFont() {
@@ -34,12 +32,12 @@ window.onload = function () {
 
     let theme = document.getElementById("theme");
     theme.addEventListener("click", function () {
-        darkLightTheme()
+        changeTheme()
     })
 
     let font = document.getElementById("font");
     font.addEventListener("click", function () {
-        menuFonts()
+        changeFonts()
     })
 
     let collorFont = document.getElementById("collorFont");
