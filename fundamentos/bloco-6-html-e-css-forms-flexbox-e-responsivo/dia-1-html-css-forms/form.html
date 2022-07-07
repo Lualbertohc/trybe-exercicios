@@ -10,55 +10,56 @@
 </head>
 
 <body>
-    <form action="">
-        <div id="form">
-        <h1>Formuário viagem Trybe</h1>
-        <br>
-        <label for="name-input"> Nome:
-            <input type="text" id="name-input" name="name" placeholder="Ex: João da Silva" min="10" max="40" required>
-        </label>
-        <label for="email-input"> E-mail:
-            <input type="email" id="email-input" name="email" placeholder="Ex: joaodasilva@email.com" min="10" max="50"
-                required>
-        </label>
-        <br>
-        <p>Qual será seu destino?</p>
-        <label for="local1">
-            <input type="radio" id="local1" name="trip"> Campos do Jordão
-        </label>
-        <label for="local2">
-            <input type="radio" id="local2" name="trip"> Venda Nova
-        </label>
-        <label for="local3">
-            <input type="radio" id="local3" name="trip"> Monte Verde
-        </label>
-        <label for="local4">
-            <input type="radio" id="local4" name="trip"> Visconde de Mauá
-        </label>
-        <br>
-        <p>Espaço para digitar a resposta:</p>
-        <textarea name="" id="text" cols="30" rows="10"
-            placeholder="Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?"
-            maxlength="500"></textarea>
-        <br>
-        <p>Qual a melhor data para realizar sua viagem?</p>
-        <label for="date">
-            <input type="date" name="" id="date" required>
-        </label>
-        <br>
-        <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
-        <label for="checkbox1">
-            <input type="checkbox" id="checkbox1">
-        </label>
-        <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
-        <label for="checkbox2">
-            <input type="checkbox" id="checkbox2">
-        </label>
-    </div>
-        <button type="submit" id="submit-button"> Enviar
-            <button type="submit" id="reset-form"> Apagar
+    <form action="" id="form">
+        <div>
+            <h1>Formuário viagem Trybe</h1>
+            <br>
+            <label for="name-input"> Nome:
+                <input type="text" id="name-input" name="name" placeholder="Ex: João da Silva" min="10" max="40"
+                    required>
+            </label>
+            <label for="email-input"> E-mail:
+                <input type="email" id="email-input" name="email" placeholder="Ex: joaodasilva@email.com" min="10"
+                    max="50" required>
+            </label>
+            <br>
+            <p>Qual será seu destino?</p>
+            <label for="local1">
+                <input type="radio" id="local1" name="trip"> Campos do Jordão
+            </label>
+            <label for="local2">
+                <input type="radio" id="local2" name="trip"> Venda Nova
+            </label>
+            <label for="local3">
+                <input type="radio" id="local3" name="trip"> Monte Verde
+            </label>
+            <label for="local4">
+                <input type="radio" id="local4" name="trip"> Visconde de Mauá
+            </label>
+            <br>
+            <p>Espaço para digitar a resposta:</p>
+            <textarea name="" id="text" cols="30" rows="10"
+                placeholder="Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?"
+                maxlength="500"></textarea>
+            <br>
+            <p>Qual a melhor data para realizar sua viagem?</p>
+            <label for="date">
+                <input type="date" name="" id="date" required>
+            </label>
+            <br>
+            <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+            <label for="checkbox1">
+                <input type="checkbox" id="checkbox1">
+            </label>
+            <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+            <label for="checkbox2">
+                <input type="checkbox" id="checkbox2">
+            </label>
+        </div>
+            <button type="submit" id="submit-button"> Enviar
+                <button type="submit" id="reset-form"> Apagar
     </form>
-            <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
